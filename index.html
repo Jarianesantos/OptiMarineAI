@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard de Monitoramento do PSV Hybrid Propulsion System. Eficiência energética, redução de emissões e sustentabilidade marítima.">
+    <title>PSV Hybrid Propulsion | Dashboard de Monitoramento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-ship"></i>
+            <h1>PSV Hybrid Propulsion</h1>
+        </div>
+        <nav class="nav">
+            <a href="#overview"><i class="fas fa-home"></i> Visão Geral</a>
+            <a href="#energy"><i class="fas fa-bolt"></i> Energia</a>
+            <a href="#emissions"><i class="fas fa-smog"></i> Emissões</a>
+            <a href="#efficiency"><i class="fas fa-chart-line"></i> Eficiência</a>
+            <a href="#compliance"><i class="fas fa-check-circle"></i> Conformidade</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Monitoramento em Tempo Real do PSV Diamond 3000</h2>
+            <p>Otimize a eficiência energética, reduza emissões de CO₂ e garanta conformidade com regulamentações marítimas como IMO 2020 e NORMAM-401/DPC.</p>
+            <div class="hero-buttons">
+                <a href="#overview" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Iniciar Monitoramento
+                </a>
+                <a href="#emissions" class="btn btn-secondary">
+                    <i class="fas fa-chart-bar"></i> Ver Emissões
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/psv-diamond.jpg" alt="PSV Diamond 3000" onerror="this.src='https://via.placeholder.com/600x400/2E8B57/FFFFFF?text=PSV+Diamond+3000'">
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-globe-americas"></i> Visão Geral</h2>
+            <p>Dados em tempo real do PSV Diamond 3000</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon green">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Índice de Sustentabilidade</h3>
+                    <p class="value">92.5%</p>
+                    <p class="label">Excelente</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon blue">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Energia Total</h3>
+                    <p class="value">4500 kWh</p>
+                    <p class="label">Hoje</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon orange">
+                    <i class="fas fa-smog"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Emissões de CO₂</h3>
+                    <p class="value">12.4 t</p>
+                    <p class="label">Este mês</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon purple">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Eficiência Energética</h3>
+                    <p class="value">94%</p>
+                    <p class="label">Ótimo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy Section -->
+    <section id="energy" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-bolt"></i> Uso de Energia</h2>
+            <p>Distribuição do uso de energia por fonte</p>
+        </div>
+        <div class="energy-grid">
+            <div class="energy-card">
+                <h3>Mix de Energia</h3>
+                <div class="energy-mix">
+                    <div class="energy-source">
+                        <span class="label">Diesel</span>
+                        <div class="bar" style="width: 40%; background: #FF6B6B;"></div>
+                        <span class="value">40%</span>
+                    </div>
+                    <div class="energy-source">
+                        <span class="label">Elétrico</span>
+                        <div class="bar" style="width: 30%; background: #4ECDC4;"></div>
+                        <span class="value">30%</span>
+                    </div>
+                    <div class="energy-source">
+                        <span class="label">Baterias</span>
+                        <div class="bar" style="width: 20%; background: #45B7D1;"></div>
+                        <span class="value">20%</span>
+                    </div>
+                    <div class="energy-source">
+                        <span class="label">Solar</span>
+                        <div class="bar" style="width: 10%; background: #FFA07A;"></div>
+                        <span class="value">10%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="energy-card">
+                <h3>Consumo por Motor</h3>
+                <div class="engine-gauges">
+                    <div class="gauge-container">
+                        <h4>Motor Diesel 1</h4>
+                        <div class="gauge" data-percent="75"></div>
+                        <p>75%</p>
+                    </div>
+                    <div class="gauge-container">
+                        <h4>Motor Diesel 2</h4>
+                        <div class="gauge" data-percent="60"></div>
+                        <p>60%</p>
+                    </div>
+                    <div class="gauge-container">
+                        <h4>Motor Elétrico</h4>
+                        <div class="gauge" data-percent="80"></div>
+                        <p>80%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emissions Section -->
+    <section id="emissions" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-smog"></i> Emissões de CO₂</h2>
+            <p>Monitoramento e redução de emissões</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="emissionsChart"></canvas>
+        </div>
+        <div class="emissions-details">
+            <div class="detail">
+                <p><strong>Emissões totais:</strong> 12.4 toneladas de CO₂</p>
+                <p><strong>Redução em relação ao mês passado:</strong> <span class="positive">-15%</span></p>
+            </div>
+            <div class="detail">
+                <p><strong>Meta para este ano:</strong> 10 toneladas de CO₂</p>
+                <p><strong>Progresso:</strong> 78%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 78%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficiency Section -->
+    <section id="efficiency" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-chart-line"></i> Eficiência Energética</h2>
+            <p>Otimização do consumo de combustível e energia</p>
+        </div>
+        <div class="efficiency-grid">
+            <div class="efficiency-card">
+                <h3>Consumo de Combustível</h3>
+                <div class="fuel-gauge">
+                    <div class="gauge" data-percent="65"></div>
+                    <p>65% da capacidade</p>
+                </div>
+                <p><strong>Economia:</strong> <span class="positive">+12%</span> em relação à média</p>
+            </div>
+            <div class="efficiency-card">
+                <h3>Eficiência por Fonte</h3>
+                <div class="efficiency-bars">
+                    <div class="efficiency-bar">
+                        <span class="label">Diesel</span>
+                        <div class="bar" style="width: 85%; background: #FF6B6B;"></div>
+                        <span class="value">85%</span>
+                    </div>
+                    <div class="efficiency-bar">
+                        <span class="label">Elétrico</span>
+                        <div class="bar" style="width: 95%; background: #4ECDC4;"></div>
+                        <span class="value">95%</span>
+                    </div>
+                    <div class="efficiency-bar">
+                        <span class="label">Baterias</span>
+                        <div class="bar" style="width: 90%; background: #45B7D1;"></div>
+                        <span class="value">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section id="compliance" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-check-circle"></i> Conformidade Regulatória</h2>
+            <p>Status de conformidade com regulamentações ambientais</p>
+        </div>
+        <div class="compliance-grid">
+            <div class="compliance-card">
+                <div class="compliance-status conform">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>IMO 2020</h3>
+                <p>Limite de enxofre em combustíveis: <strong>0.5%</strong></p>
+                <p class="status conform">Conforme</p>
+            </div>
+            <div class="compliance-card">
+                <div class="compliance-status conform">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>NORMAM-401/DPC</h3>
+                <p>Controle de bioincrustação: <strong>Em dia</strong></p>
+                <p class="status conform">Conforme</p>
+            </div>
+            <div class="compliance-card">
+                <div class="compliance-status warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3>EEDI</h3>
+                <p>Índice de eficiência energética: <strong>2.45</strong></p>
+                <p class="status warning">Atenção: Próximo do limite</p>
+            </div>
+            <div class="compliance-card">
+                <div class="compliance-status conform">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>SEEMP</h3>
+                <p>Plano de gestão de eficiência energética: <strong>Aprovado</strong></p>
+                <p class="status conform">Conforme</p>
+                <!-- Manutenção Preditiva Section -->
+<section id="maintenance" class="section">
+    <div class="section-header">
+        <h2><i class="fas fa-tools"></i> Manutenção Preditiva</h2>
+        <p>Monitoramento do estado dos equipamentos</p>
+    </div>
+    <div class="maintenance-grid">
+        <div class="maintenance-card">
+            <h3>Motor Diesel 1</h3>
+            <div class="status-indicator good">
+                <i class="fas fa-check-circle"></i>
+                <p>Bom</p>
+            </div>
+            <p><strong>Próxima manutenção:</strong> 30 dias</p>
+        </div>
+        <div class="maintenance-card">
+            <h3>Motor Diesel 2</h3>
+            <div class="status-indicator warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Atenção</p>
+            </div>
+            <p><strong>Próxima manutenção:</strong> 15 dias</p>
+        </div>
+        <div class="maintenance-card">
+            <h3>Baterias</h3>
+            <div class="status-indicator good">
+                <i class="fas fa-check-circle"></i>
+                <p>Bom</p>
+            </div>
+            <p><strong>Próxima manutenção:</strong> 45 dias</p>
+        </div>
+    </div>
+</section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-ship"></i>
+                <h3>PSV Hybrid Propulsion</h3>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Jarianesantos/psv-hybrid-propulsion" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fas fa-file-alt"></i> Documentação
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fas fa-envelope"></i> Contato
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PSV Hybrid Propulsion. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <strong>Jariane Santos</strong> | Projeto de Sustentabilidade Marítima</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="IA.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
